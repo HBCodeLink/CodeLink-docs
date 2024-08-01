@@ -1,3 +1,4 @@
 site_name: CodeLink
+site_url: https://hbcodelink.github.io/CodeLink-docs/
 theme:
   name: material
