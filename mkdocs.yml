@@ -8,3 +8,7 @@ theme:
 
 plugins:
   - search
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
