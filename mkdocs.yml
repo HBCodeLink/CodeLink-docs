@@ -4,7 +4,26 @@ theme:
   name: material
   features:
     - navigation.instant
+    - navigation.tabs
     - navigation.instant.prefetch
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch
+      primary: green
+      accent: black
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light
+      primary: green
+      accent: purple
 
 plugins:
   - search
@@ -12,3 +31,20 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - footnotes
+  - pymdownx.details
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/HBCodeLink
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/hb_codelink
+copyright: |
+  &copy; 2023 <a href="https://github.com/HBCodeLink" target="_blank" rel="noopener">CodeLink</a>

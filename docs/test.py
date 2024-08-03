@@ -1,0 +1,2 @@
+age = float()
+aa = bool()

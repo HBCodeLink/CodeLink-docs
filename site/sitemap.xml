@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://hbcodelink.github.io/CodeLink-docs/</loc>
-         <lastmod>2024-08-01</lastmod>
+         <lastmod>2024-08-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hbcodelink.github.io/CodeLink-docs/Lesson%201%3A%20Your%20First%20Program/</loc>
-         <lastmod>2024-08-01</lastmod>
+         <loc>https://hbcodelink.github.io/CodeLink-docs/September%3A%20Basic%20Programming/lesson1/</loc>
+         <lastmod>2024-08-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
