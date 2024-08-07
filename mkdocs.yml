@@ -1,5 +1,12 @@
 site_name: CodeLink
 site_url: https://hbcodelink.github.io/CodeLink-docs/
+nav:
+  - Home: index.md
+  - September: 
+      - September\lesson1.md
+      - September\lesson2.md
+  - April: April\lesson1.md
+
 theme:
   name: material
   features:
@@ -27,6 +34,8 @@ theme:
 
 plugins:
   - search
+  - awesome-pages
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
