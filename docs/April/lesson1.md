@@ -1,4 +1,4 @@
-# Lesson 1: Intro to Numpy
+# Lesson 1: Intro to Numpy and Edward
 
 ## Lesson Overview
 
