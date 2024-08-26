@@ -1,5 +1,5 @@
 # Lesson 1: Your First Program
-.
+
 ## Programming Basics
 
 > This lesson will go over how to make your first program in Python which is one of the most popular, simple and widely used programming languages out there. This will teach basic concepts such as output, input, variables, loops and conditionels. This lesson will assume you have a working Python environment using Python (**3.10.12**) or later.
