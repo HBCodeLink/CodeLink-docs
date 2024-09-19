@@ -60,4 +60,4 @@ car1 = Car("Toyota", "red", 99)
 
 
 ## Next Steps
-Read about OOP on W3Schools if you want more information or continue to the next lesson
+Read about OOP on W3Schools if you want more information or continue to the next lesson 
