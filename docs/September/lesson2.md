@@ -4,7 +4,7 @@
 
 > This lesson will go over how to loop over data and use conditionals to add dynamic code to your project. This lesson will assume you have a working Python environment using Python (**3.10.12**) or later.
 
-### Conditional
+## Conditional
 
 > To check if a variable is equal to a value, use the if statement
 
@@ -39,101 +39,125 @@
 >
 > The same is true for all the other signs
 >
-> #### Negation
+> ### Negation
 >
-> To run the statement if the condition is NOT
+> To run the statement if the condition is NOT True use the exclamatoin mark ! or use the not keyword
+>
+> ```python
+> name = "Bob"
+> if (name != "John"):
+>    print("Your name is Bob")
+> ```
+>
+> This piece of code run if the name is NOT "John"
+>
+> ### Else statements
+>
+> This piece of code runs if the previvous condition is not true. For example if the age is not greater than 15 than can run another condition
+>
+> ```python
+> name = "Bob"
+> if (name != "John")
+>   print("Your name is Bob")
+> else:
+>   print("Your name is John")
+> ```
+>
+> The else statement will run **ONLY** if the name is John
+>
+> ### Else if statements
+>
+> This piece of code runs if the previvous condition is not true. Unlike an else this includes a condition. Multiple else if can be used in paralled going from the top to the bottom
+>
+> ```python
+> name = "Bob"
+> if (name == "Bob")
+>   print("Your name is Bob")
+> else if (name == "John"):
+>    print("Your name is John")
+> else if (name == "Edward"):
+>   print("Your name is Edward")
+> else:
+>   print("Your name is not Bob John or edward")
+> ```
+>
+> #### Output
+>
+> ```
+> Your name is Bob
+> ```
+>
+> The code will run top to bottom from the if to the else. If the condition isnt met it will go to the next statement.
 
-### Variables
+## Loops
 
-> Variables store data into memory to be accessed later. A variable must have a name to be assigned and a value. To decalre a variable type this
+Loops make it easier to run a piece of code continously until a condition is fufilled. There are 2 main types of loops: a while loop and a for loop
 
-> ```python
-> age = 15
-> ```
->
-> This will assign the variable "age" to the value 15. This value can be access later in different situations, by replacing the value with the variable
->
-> ```python
-> print(age)
-> ```
->
-> Output:
->
-> ```
-> 15
-> ```
->
-> The value can be modified later also, but it will only apply to the lines after it is changed
->
-> ```python
-> age = 10
-> print(age)
-> age = 15
-> print(age)
-> ```
->
-> Output:
->
-> ```
-> 10
-> 15
-> ```
->
-> There are 4 main types of variables we will go in this lesson each representing different values
->
-> #### Strings
->
-> These values represent text and is surruounded with single or double quotes
->
-> ```python
-> name = "bob"
-> name2 = 'john'
-> ```
->
-> #### Integers
->
-> These values represent a non decimal number postive or negative
->
-> ```python
-> age = 15
-> score = 99
-> ```
->
-> #### Floats
->
-> These values represent a postive or negative decimal
->
-> ```python
-> cost = 4.99
-> length = 9.87
-> ```
->
-> #### Booleans
->
-> These values represent a value of either True or False
->
-> ```python
-> is_allowed = True
-> is_male = False
-> ```
->
-> ### Input
->
-> To recieve an input from the user and store it into a variable, use the input() function
->
-> ```python
-> name = input("Please enter your name")
-> ```
->
-> To use recieve non-strings as input, you must convert it into that type
->
-> ```python
-> age = int(input("Please enter your name"))
-> cost = float(input("Please enter the cost"))
-> ```
->
-> For boolean, an empty string or the number 0 is False, while other values are considered True
+### While Loops
+
+While loops run until a condition is fufilled. If that condition is not fufilled it will continue running. If you put while (True) it will run forever, while doing While(False) will make it not run
+
+```python
+password = ""
+while (password != "password123")
+  password = input("Please enter the password ")
+print("Access Granted")
+```
+
+#### Input
+
+```
+Please enter the password bob
+Please enter the password bob2
+Please enter the password password123
+```
+
+#### Output
+
+```
+Access Granted
+```
+
+### For Loops
+
+For loops run for a set number of times, not until a condition is fufilled. For example you can make it run 3 times then exit.
+
+```python
+for i in range(5):
+  print(i)
+```
+
+#### Output
+
+```
+0
+1
+2
+3
+4
+```
+
+In this loop i represents the current number and range(5) represnts the number **up to 5, but not including 5** (0, 1, 2, 3, 4)
+
+#### Break statements
+
+Break statements manually exit the loop even if the outer condition is not fufilled or the set number of times the loop should run is not reached
+
+```python
+for i in range(5):
+  print(i)
+  if (i == 2):
+    break
+```
+
+#### Output
+
+```
+0
+1
+2
+```
 
 ## Next Steps
 
-> Read the next lesson
+Read the next lesson (1.3)
