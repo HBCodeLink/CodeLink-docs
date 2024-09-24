@@ -234,10 +234,8 @@ const myfunc = (i) => {
 
 <details>
 <summary>Is this a variable function?</summary>
-<br>
 Yes! This function has the keyword const for a variable and is thus a variable.
 </details>
-<br />
 
 ## Classes
 
@@ -273,10 +271,8 @@ class Car {
 
 <details>
 <summary>What do both "this" and "self" represent?</summary>
-<br>
 They represent the object it is modifying.
 </details>
-<br />
 
 # Day 5
 
