@@ -1,6 +1,6 @@
 # Lesson 1: JavaScript basics
 
-> This self study guide will teach all you need to know about JavaScript.
+This self study guide will teach all you need to know about JavaScript.
 
 # Day 1
 
@@ -24,6 +24,8 @@ To print "hello world" to the terminal you can do
 ```javascript
 console.log("hello world");
 ```
+
+To run the code type `node file.js` in the terminal where you replace `file` with the name of your javascript file
 
 This will do the same thing as print("Hello World")
 on Python3
