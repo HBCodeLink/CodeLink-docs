@@ -8,6 +8,8 @@ nav:
   - October:
       - October/lesson1.md
       - October/lesson2.md
+  - November:
+      - November/lesson1.md
   - December:
       - December/resources.md
   - April: April/lesson1.md
@@ -60,4 +62,4 @@ extra:
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/hb_codelink
 copyright: |
-  &copy; 2023 <a href="https://github.com/HBCodeLink" target="_blank" rel="noopener">CodeLink</a>
+  &copy; 2024 <a href="https://github.com/HBCodeLink" target="_blank" rel="noopener">CodeLink</a>
