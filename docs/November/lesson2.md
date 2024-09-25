@@ -245,7 +245,27 @@ Ex.
 ```html
 <ul>
   <li class="yap-1">Yap point 1</li>
-  <li>Yap point 2</li>
-  <li>Yap point 3</li>
+  <li class="yap-2">Yap point 2</li>
+  <li class="yap-3">Yap point 3</li>
 </ul>
 ```
+
+Now in your CSS add a field for `.class-name`
+in this example it is `.yap-1`
+
+```css
+.yap-1 {
+  color: red;
+}
+```
+
+<details>
+<summary>Is `.h1` and `h1` the same?</summary>
+No .h1 refers to the class "h1" while h1 refers to the HTML element
+</details>
+
+## Foreword
+
+This lesson only went through the basic HTML tags and props. If you want to learn more about them please consult the resources to learn all the props available.
+
+In this next lesson we are going to learn how to make this interactive.
