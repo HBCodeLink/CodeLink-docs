@@ -167,3 +167,85 @@ Example
   <li>lorem, semper malesuada ligula turpis in arcu. In bibendum aliquet turpis, ut sagittis quam ornare sit amet. Fusce pharetra massa ut condimentum mollis.</li>
   <li>Curabitur mattis turpis vel porta hendrerit. Phasellus faucibus, tellus ac placerat aliquam, mi metus fringilla tellus, in malesuada. </li>
 </ul>
+
+## Day 4
+
+### CSS Basics
+
+Now right now our resume looks ugly. If somewhere saw this resume you would turn from accepted to rejected. We need to make it look better, but how you say. CSS! A tool sent from the heavens to style your website!
+
+Steps
+
+- First, create a CSS file with the extension `.css` ex. `styles.css`
+- Now go back to your HTML file
+- Add this inside the `head` tag of your code
+
+```html
+<link rel="stylesheet" type="text/css" href="styles.css"></link>
+```
+
+Remember to make the href the same as the name of your CSS file.
+
+<details>
+<summary>Do you notice anything?</summary>
+The content of the link tag is empty! That means it is useless. We can use a self closing tag if the tag has no content and only props.
+</details>
+
+```html
+<link rel="stylesheet" type="text/css" href="styles.css" />
+```
+
+Wow so cool!
+
+### Using CSS
+
+Lets start by making the heading orange (because why not!)
+
+- Go on the `.css` file
+- First, what do we need to modify (the `h1` element)
+- Type the name of the element you want to modify
+- Also add curly brackets (Like JS)
+
+Ex.
+
+```css
+h1 {
+}
+```
+
+- Now we need to set some attributes
+- This is just like a dictionary/object with a key-value pair
+- In this we will modify the `color` key
+- We will set this value to `orange`
+
+```css
+h1 {
+  color: orange;
+}
+```
+
+Voila! the heading is now orange.
+
+### Exercise
+
+Set every single part of our resume to orange
+
+## Day 5
+
+We have a list of bullet points in the form of `ul` and `li`. With out current setup we cannot set different colors for each bullet point as setting `li` to one color sets **ALL** lis.
+
+Lets fix that!
+
+We need to identify each element with a class so we HTML knows what to change
+
+To do this add the class prop to anything
+
+Ex.
+
+```html
+<ul>
+  <li class="yap-1">Yap point 1</li>
+  <li>Yap point 2</li>
+  <li>Yap point 3</li>
+</ul>
+```
