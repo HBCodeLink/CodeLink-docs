@@ -2,9 +2,9 @@
 
 This self study guide will teach all you need to know about JavaScript.
 
-# Day 1
+## Day 1
 
-## Installing NodeJS
+### Installing NodeJS
 
 - Go to their official [website](https://nodejs.org)
 - Click download for your operating system
@@ -12,12 +12,12 @@ This self study guide will teach all you need to know about JavaScript.
 - For Windows use the built in installer
 - For WSL Linux type in `sudo apt install node`
 
-## Create a JavaScript file
+### Create a JavaScript file
 
 - Go on visual studio code
 - Create a new ".js" file
 
-## Start using JavaScript
+### Start using JavaScript
 
 To print "hello world" to the terminal you can do
 
@@ -37,11 +37,11 @@ The code does not give an error as JavaScript like the majority of programming l
 </details>
 <br />
 
-# Day 2
+## Day 2
 
-## Python and JavaScript differences
+### Python and JavaScript differences
 
-### Variables
+#### Variables
 
 - Create a variable exactly as how you do in python
 - Now is your variable going to change. This will determine if it is constant or not
@@ -61,7 +61,7 @@ The "//" character represents a comment in JavaScript. This is the same as how P
 </details>
 <br />
 
-### Conditionnals and loops
+#### Conditionnals and loops
 
 - First, create a python if statement like this
 
@@ -136,7 +136,7 @@ Indentation! You do not technically need to indent your code, but you should to 
 </details>
 <br />
 
-# Day 3
+## Day 3
 
 Now we can talk about where Python and JavaScript truly separate. This is with for loops.
 
@@ -190,9 +190,9 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-# Day 4
+## Day 4
 
-## Functions
+### Functions
 
 This day will be dedicated to functions and classes in JavaScript
 
@@ -276,11 +276,11 @@ class Car {
 They represent the object it is modifying.
 </details>
 
-# Day 5
+## Day 5
 
 This lesson is dedicated to the smaller differences between the two languages
 
-## Import
+### Import
 
 To import something in javascript use the import statement
 
@@ -306,7 +306,7 @@ You can also arrays using the **new** keyword
 const arr = new Array(1, 2, 3);
 ```
 
-## Dictionaries/Objects
+### Dictionaries/Objects
 
 A dictionary and object are the same thing in Python and JavaScript, you even use the same curly bracket notation to define one
 
