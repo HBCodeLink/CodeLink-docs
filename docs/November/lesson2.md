@@ -2,7 +2,7 @@
 
 > This self-study guide will go over the basics of HTML and CSS. These technologies are important to structure and style your application. In the next lesson we will learn how to add JavaScript to make your website interactive
 
-## Day 1
+## Day 6
 
 The only thing you need to install is the "Live Server" extension on VSCode
 
@@ -67,7 +67,7 @@ Now lets get back to the code.
   - Currently it is empty, but this is where we add all the elements
   - All elements seen in the browser will be here
 
-## Day 2
+## Day 7
 
 Lets add something to the body!
 
@@ -147,7 +147,7 @@ Output:
   <li>Yap Point 3</li>
 </ul>
 
-## Day 3
+## Day 8
 
 ### Challenge
 
@@ -168,7 +168,7 @@ Example
   <li>Curabitur mattis turpis vel porta hendrerit. Phasellus faucibus, tellus ac placerat aliquam, mi metus fringilla tellus, in malesuada. </li>
 </ul>
 
-## Day 4
+## Day 9
 
 ### CSS Basics
 
@@ -230,7 +230,7 @@ Voila! the heading is now orange.
 
 Set every single part of our resume to orange
 
-## Day 5
+## Day 10
 
 We have a list of bullet points in the form of `ul` and `li`. With out current setup we cannot set different colors for each bullet point as setting `li` to one color sets **ALL** lis.
 

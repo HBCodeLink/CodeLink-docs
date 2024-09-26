@@ -4,7 +4,7 @@
 
 In this lesson we are going to be building a number guesser.
 
-## Day 1
+## Day 11
 
 ### App Description
 
@@ -40,7 +40,7 @@ Steps
 - Lets give this website a good name.
 - Add an `h1` element that describes the app
 
-## Day 2
+## Day 12
 
 ### HTML Forms
 
@@ -94,7 +94,7 @@ IDs must be unique in the entire page unlike edward who can't be unique a single
   You should use a class is it describes a large amount of data
 </details>
 
-## Day 3
+## Day 13
 
 Now lets start writing JS code. First we need to wait for all the HTML load (DOM).
 To do that type this
@@ -164,7 +164,7 @@ const calc = function (e) {
 };
 ```
 
-## Day 4
+## Day 14
 
 Next we need to show this `out` to the user.
 
@@ -205,8 +205,14 @@ if (diff === 0) {
 }
 ```
 
-Our application is now done for the core features. You can continue and learn how to do bonus features.
+Our application is now done for the core features.
 
 ## Day 5
 
-### Bonus
+### Bonus features
+
+Now that you have finished the core applications try these features from easiest to hardest
+
+- Change the color of the text ex. "FREEZING" is blue and "WARM" is orange
+- Add a counter of the number of guesses it took
+- Style the website with more CSS
