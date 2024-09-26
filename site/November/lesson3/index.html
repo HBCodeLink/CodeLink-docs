@@ -729,6 +729,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#day-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Day 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#app-description" class="md-nav__link">
     <span class="md-ellipsis">
       App Description
@@ -736,8 +746,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#html-creation" class="md-nav__link">
     <span class="md-ellipsis">
       HTML Creation
@@ -745,16 +755,30 @@
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
+  <a href="#day-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Day 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#html-forms" class="md-nav__link">
     <span class="md-ellipsis">
       HTML Forms
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="HTML Forms">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#input" class="md-nav__link">
@@ -778,6 +802,72 @@
   <a href="#code" class="md-nav__link">
     <span class="md-ellipsis">
       Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Labels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      IDs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#day-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#day-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day 4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#day-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day 5
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Day 5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bonus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bonus
     </span>
   </a>
   
@@ -808,7 +898,8 @@
 <p>This self study guide will go over how to integrate JavaScript with your HTML and CSS code. This will allow your website to not become boring like edward</p>
 </blockquote>
 <p>In this lesson we are going to be building a number guesser.</p>
-<h2 id="app-description">App Description</h2>
+<h2 id="day-1">Day 1</h2>
+<h3 id="app-description">App Description</h3>
 <ul>
 <li>This will choose a number between 1 and 100</li>
 <li>If the number is up to 5 greater or lesson, it is hot</li>
@@ -821,7 +912,7 @@
   Solution <a href="https://codefile.io/f/JoJs0P97Zr">here</a>
 </details>
 
-<h2 id="html-creation">HTML Creation</h2>
+<h3 id="html-creation">HTML Creation</h3>
 <p>Lets start by creating an empty HTML file. Use the <code>!</code> shortcut to create some boilerplate code.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
@@ -838,7 +929,8 @@
 <li>Lets give this website a good name.</li>
 <li>Add an <code>h1</code> element that describes the app</li>
 </ul>
-<h2 id="html-forms">HTML Forms</h2>
+<h2 id="day-2">Day 2</h2>
+<h3 id="html-forms">HTML Forms</h3>
 <p>Forms are a special HTML element contained of multiple elements. These elements work together to create a form.</p>
 <p>The two that we will be using are Inputs and Buttons</p>
 <h3 id="input">Input</h3>
@@ -857,8 +949,107 @@
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;guess&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="p">/&gt;</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;guess&quot;</span><span class="p">&gt;</span>Enter a number<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span><span class="p">&gt;</span>Guess!<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;out&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;num&quot;</span><span class="p">&gt;</span>0 Guesses left<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 </code></pre></div>
+<p>Now what is a label. A label is an element that describes an input</p>
+<h4 id="labels">Labels</h4>
+<p>What do labels need</p>
+<ul>
+<li>Content that describes the input</li>
+<li>The id of the input it is describing</li>
+</ul>
+<h4 id="ids">IDs</h4>
+<p>Now you see the ID prop on these elements. You might be wondering what are IDS</p>
+<p>IDs are similar to classes in that it tells HTML what to modify, but are generally used for one or a few elements. Therefore they take precedence over classes during a conflict.</p>
+<p>IDs must be unique in the entire page unlike edward who can't be unique a single time</p>
+<details>
+  <summary>If an object represents a large number of student names, should you use an ID or Class</summary>
+  You should use a class is it describes a large amount of data
+</details>
+
+<h2 id="day-3">Day 3</h2>
+<p>Now lets start writing JS code. First we need to wait for all the HTML load (DOM).
+To do that type this</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;DOMContentLoaded&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">init</span><span class="p">);</span>
+</code></pre></div>
+<p><code>document</code> refers to the HTML document. This code waits until the DOM is loaded then runs the init function. Now we dont have an init function just yet. Lets create one at the top!</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">init</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;button-send&quot;</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">calc</span><span class="p">);</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">};</span>
+</code></pre></div>
+<p>This piece of code will get the <code>button-send</code> and wait until it is clicked</p>
+<p>If it is clicked it will run the calculate function.</p>
+<p>Now lets make the calculate function.</p>
+<p>Remember the exercise from before. Copy that code into the document (See homework is useful kids!)</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">calc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">diff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">abs</span><span class="p">(</span><span class="nx">num</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">guess</span><span class="p">));</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">diff</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;CORRECT&quot;</span><span class="p">);</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">diff</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;HOT&quot;</span><span class="p">);</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">diff</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">10</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;WARM&quot;</span><span class="p">);</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">diff</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">30</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;COOL&quot;</span><span class="p">);</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;FREEZING&quot;</span><span class="p">);</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="p">};</span>
+</code></pre></div>
+<ul>
+<li>Now lets create a variable called output and set the values instead of logging them.</li>
+<li>Then lets run <code>e.preventDefault</code> which will not do the default action and run the function instead. For this we need to take e which is the event handler (we will explain this later)</li>
+<li>Next lets get the elements value by making the guess equal to the <code>document.getElementById("guess").value</code></li>
+<li>This will get the element with ID "guess" and get the value contained inside</li>
+</ul>
+<p>Our code currently looks like this</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">calc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">guess</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;guess&quot;</span><span class="p">).</span><span class="nx">value</span><span class="p">;</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">diff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">abs</span><span class="p">(</span><span class="nx">num</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">guess</span><span class="p">));</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">diff</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="nx">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;CORRECT&quot;</span><span class="p">;</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">diff</span><span class="w"> </span><span class="o">&lt;==</span><span class="w"> </span><span class="mf">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">    </span><span class="nx">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;HOT&quot;</span><span class="p">;</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">diff</span><span class="w"> </span><span class="o">&lt;==</span><span class="w"> </span><span class="mf">10</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="nx">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;WARM&quot;</span><span class="p">;</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">diff</span><span class="w"> </span><span class="o">&lt;==</span><span class="w"> </span><span class="mf">30</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">    </span><span class="nx">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;COOL&quot;</span><span class="p">;</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="w">    </span><span class="nx">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;FREEZING&quot;</span><span class="p">;</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="p">};</span>
+</code></pre></div>
+<h2 id="day-4">Day 4</h2>
+<p>Next we need to show this <code>out</code> to the user.</p>
+<p>First lets modify the element with the class out which represents the output <code>h1</code></p>
+<p>Right now it is empty, but we cant modify it with this</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;out&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">out</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+</code></pre></div>
+<p>The backticks in JS allow you to insert variables into string by inserting the variable name between <code>${}</code></p>
+<p>This will set the content of the element with id <code>out</code> to <code>${out}</code></p>
+<p>Next we need to generate a random number</p>
+<p>We will create a random generator function that will generate an integer from 1 to 100</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">genNum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">100</span><span class="p">);</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="kd">let</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">genNum</span><span class="p">();</span>
+</code></pre></div>
+<p>genNum is an arrow function. If it is a one line with no curly brackets, the content after the arrow is automatically <strong>returned</strong></p>
+<p>Then we set a <strong>global</strong> variable that will represent the current number</p>
+<p>Now we need to reset the number when a correct attempt is created</p>
+<p>To do this we can just set the num = genNum(); in the function</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">diff</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="nx">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;CORRECT&quot;</span><span class="p">;</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="nx">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">genNum</span><span class="p">();</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="p">}</span>
+</code></pre></div>
+<p>Our application is now done for the core features. You can continue and learn how to do bonus features.</p>
+<h2 id="day-5">Day 5</h2>
+<h3 id="bonus">Bonus</h3>
 
 
 
