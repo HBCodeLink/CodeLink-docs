@@ -2,12 +2,12 @@ site_name: CodeLink
 site_url: https://hbcodelink.github.io/CodeLink-docs/
 nav:
   - Home: index.md
-  - September:
-      - September/lesson1.md
-      - September/lesson2.md
   - October:
+      - October/lesson0.md
       - October/lesson1.md
       - October/lesson2.md
+      - October/lesson3.md
+      - October/lesson4.md
   - November:
       - November/lesson1.md
       - November/lesson2.md

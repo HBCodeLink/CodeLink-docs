@@ -14,7 +14,7 @@ This self study guide will teach all you need to know about JavaScript.
 
 ### Create a JavaScript file
 
-- Go on visual studio code
+- Go on Visual Studio code
 - Create a new ".js" file
 
 ### Start using JavaScript
@@ -61,7 +61,7 @@ The "//" character represents a comment in JavaScript. This is the same as how P
 </details>
 <br />
 
-#### Conditionnals and loops
+#### Conditionals and loops
 
 - First, create a python if statement like this
 
@@ -78,7 +78,7 @@ else:
 - Then replace the colon for indentation with a pair of curly brackets
 - The start goes where the usually is and the end goes right before the next condition
 
-Your conditionnal will now be like this
+Your conditional will now be like this
 
 ```javascript
 if (age > 18) {

@@ -1,83 +1,213 @@
-# Lesson 1: Object Oriented Programming
+# Lesson 1: Your First Program
 
 ## Day 1
 
-## Overview
+> This lesson will go over how to make your first program in Python which is one of the most popular, simple and widely used programming languages out there. This will teach basic concepts such as output, input, variables, loops and conditionals. This lesson will assume you have a working Python environment using Python (**3.10.12**) or later.
 
-> This self-study guide will cover how to use object oriented programming. This will include making classes, constructors and methods inside classes, along with calling these functions. This lesson will assume you have a working Python environment using Python (**3.10.12**) or later, though you only need version **3.0.0** to follow **most** of the course
+### Output
+
+> To print text into the console, use the print("function)
+
+> ```python
+> print("Hello World!")
+> ```
+>
+> Output:
+>
+> ```
+> Hello World!
+> ```
+>
+> This function will output Hello World! into the terminal. Text must be wrapped within quotes (This is called a string)
+
+> To print a number, you can do the same thing without the quote as numbers are not a string
+>
+> ```python
+> print(9)
+> ```
+>
+> Output:
+>
+> ```
+> 9
+> ```
+
+<details>
+  <summary>Why do you not need a single or double quote for numbers</summary>
+  This tells Python3 to perform calculations like they are number, not characters in text. While you can print "3" you can't do "3" * 3
+</details>
+
+### Variables
+
+> Variables store data into memory to be accessed later. A variable must have a name to be assigned and a value. To declare a variable type this
+
+> ```python
+> age = 15
+> ```
+>
+> This will assign the variable "age" to the value 15. This value can be access later in different situations, by replacing the value with the variable
+>
+> ```python
+> print(age)
+> ```
+>
+> Output:
+>
+> ```
+> 15
+> ```
+>
+> The value can be modified later also, but it will only apply to the lines after it is changed
+>
+> ```python
+> age = 10
+> print(age)
+> age = 15
+> print(age)
+> ```
+>
+> Output:
+>
+> ```
+> 10
+> 15
+> ```
+>
+> There are 4 main types of variables we will go in this lesson each representing different values
+>
+> #### Strings
+>
+> These values represent text and is surrounded with single or double quotes
+>
+> ```python
+> name = "bob"
+> name2 = 'john'
+> ```
+>
+> #### Integers
+>
+> These values represent a non decimal number positive or negative
+>
+> ```python
+> age = 15
+> score = 99
+> ```
+>
+> #### Floats
+>
+> These values represent a positive or negative decimal
+>
+> ```python
+> cost = 4.99
+> length = 9.87
+> ```
+>
+> #### Booleans
+>
+> These values represent a value of either True or False
+>
+> ```python
+> is_allowed = True
+> is_male = False
+> ```
+>
+> ### Input
+>
+> To receive an input from the user and store it into a variable, use the input() function
+>
+> ```python
+> name = input("Please enter your name")
+> ```
+>
+> To use receive non-strings as input, you must convert it into that type
+>
+> ```python
+> age = int(input("Please enter your name"))
+> cost = float(input("Please enter the cost"))
+> ```
+>
+> For boolean, an empty string or the number 0 is False, while other values are considered True. Even the string "False" is considered True!
 
 ## Day 2
 
-## Classes
+### Math Basics
 
-> Classes can represent any object that has **properties** and/or functions. For example a car has properties of the number of wheels, the length width, etc... Classes can also include subclasses such as a wheel for the example of a car.>
-
-## Day 3
-
-## Declaration
-
-> To declare a class use the class keyword follow by the name of the class. Like functions the contents of the class **MUST** be indented
+Now we will learn math operators in python
+Here are the primary operators
 
 ```python
-class Car:
+from math import *
+
+a = 5
+b = 2
+print(a+b) # Addition
+print(a-b) # Subtraction
+print(a*b) # Multiplication
+print(a/b) # Division
+print(a**b) # Exponentiation
+print(sqrt(a)) # Square Root
+print(a%b) # Modulo
 ```
 
-## Day 4
-
-## Fields and Constructor
-
-> The fields of the class are variables that the class needs such as wheels or length in the previous example. Constructors are a function that is called when the class is initialized. This can include setting default values or setting values from the user.
-
-> In python a constructor **MUST** be called "\_\_init\_\_"
-
-> Heres an example of a field and constructor.
+You can also use more functions from the Python math module
 
 ```python
-class Car:
-    __init__(self, brand, color, integrity):
-      self.brand = brand
-      self.color = color
-      self.integrity = integrity
+import math
+
+print(math.sqrt(a)) // Square Root
+print(math.ceil(a)) // Ceiling (9.2 -> 10)
+print(math.floor(a)) // Floor (9.2 -> 9)
+print(math.e) // e = 2.7
+print(round(a)) // Rounds a number
 ```
 
-> Note that the first argument is self representing the object that is created
+<details>
+  <summary>Why do you need to import math?</summary>
+  Math is an built in python library. The reason it is not built in is that it only loads if you need it. If you do not need it, it is a waste of time importing more functions.
+</details>
 
-## Day 5
+### Functions
 
-> As said before classes can have functions that can modify that data or perform another task. As an example of a car we can repair it increasing the integrity
+Functions are a piece of code that has one or many input and a singular output. These can be repeated any number of times without having to manually re-write code.
+
+To define a function use the `def` keyword and the name of the function with a colon. All code **INSIDE** the function is indented, while code outside is not.
 
 ```python
-class Car:
-    __init__(self, brand, color, integrity):
-      self.brand = brand
-      self.color = color
-      self.integrity = integrity
-    repair(self):
-        if (self.integrity > 80):
-            self.integrity = 100
-        else:
-            self.integrity += 20
+def myfunc:
+
 ```
 
-> This will increase the cars integrity by 20% when called
+Now we need some arguments. In this case we are going to make an addition function that will add two numbers. We need two numbers for the user to enter so we are going to have 2 parameters (`a` and `b`)
 
-## Day 6
+```python
+def myfunc(a, b):
 
-## Create an object
-
-> To create an object of the class you can just initialize a variable of the class
-
-```python3
-car1 = Car("Toyota", "red", 99)
 ```
 
-> This will create a red toyota with 99% integrity
+Now we need to compute the function. Lets make a variable c that represents the output
 
-## Day 7
+```python
+def add_two_numbers(a, b):
+  c = a + b
+```
 
-> Create a class plan which represents the properties of a plane such as length, capacity, color, maker etc...
-> Make sure you add a constructor and some functions such as fly and land
+Variable c is a **local** variable. This means it can't be used outside the function and has a higher priority than a **global** variable (outside the function). We will talk about this in the next few lessons, but remember to keep it in mind.
+
+Now we need to return c to the program. Now what is returning? This means that if the input is (1, 2) the output (returned value) should be 3.
+
+We can do that with the `return` keyword
+
+```python
+def add_two_numbers(a, b):
+  c = a + b
+  return c
+```
+
+<details>
+  <summary>How can we simplify this?</summary>
+  We can directly return `a+b` without making a separate variable by just saying `return a + b`
+</details>
 
 ## Next Steps
 
-Read about OOP on W3Schools if you want more information or continue to the next lesson
+> Read the next lesson

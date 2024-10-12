@@ -1,92 +1,167 @@
-# Lesson 2: Object Oriented Programming
+# Lesson 2: Conditionals and Loops
 
-## Overview
+## Day 3
 
-> This self-study guide will cover how to use object oriented programming for more advanced cases. This will include inheritance, abstraction, encapsulation and polymorphism This lesson will assume you have a working Python environment using Python (**3.10.12**) or later, though you only need version **3.0.0** to follow **most** of the course
+## Programming Basics
 
-## The 4 Pillars of Object Oriented Programming
+> This lesson will go over how to loop over data and use conditionals to add dynamic code to your project. This lesson will assume you have a working Python environment using Python (**3.10.12**) or later.
 
-> There are 4 main pillars in Object-Oriented Programming or (OOP) which are essential for good code. These are abstraction, inheritance, encapsulation and polymorphism
+## Conditional
 
-## Inheritance
+> To check if a variable is equal to a value, use the if statement
 
-> Inheritance is when you a class is based on another class. For example you can have a vehicle class, and subclasses inheriting from them such as cars, trucks and planes
+> ```python
+> age = 5
+> if (age == 5):
+>    print("You are 5 years old")
+> ```
+>
+> Output:
+>
+> ```
+> You are 5 years old
+> ```
+>
+> Note that we used two equal signs. This notes that it is a condition, not a declaration of a variable. Code that runs after a condition is true **must be indented either 2 or 4 spaces** relative to the statement
+
+> To use the greater, greater or equal, less, less or equal signs, use the following signs in order
+> \> (greater), >= (greater or equal), < (less), (<=) less or equal
+>
+> ```python
+> age = 4
+> if (age < 5):
+>    print("You are less than 5 years old")
+> ```
+>
+> Output:
+>
+> ```
+> You are less than 5 years old
+> ```
+>
+> The same is true for all the other signs
+>
+> ### Negation
+>
+> To run the statement if the condition is NOT True use the exclamation mark ! or use the not keyword
+>
+> ```python
+> name = "Bob"
+> if (name != "John"):
+>    print("Your name is Bob")
+> ```
+>
+> This piece of code run if the name is NOT "John"
+>
+> ### Else statements
+>
+> This piece of code runs if the previous condition is not true. For example if the age is not greater than 15 than can run another condition
+>
+> ```python
+> name = "Bob"
+> if (name != "John") # Name is NOT John
+>   print("Your name is not John")
+> else: ## Name is John
+>   print("Your name is John")
+> ```
+>
+> The else statement will run **ONLY** if the name is John
+>
+> ### Else if statements
+>
+> This piece of code runs if the previous condition is not true. Unlike an else this includes a condition. Multiple elif statements can be used in parallel going from the top to the bottom
+>
+> ```python
+> name = "Bob"
+> if (name == "Bob")
+>   print("Your name is Bob")
+> else if (name == "John"):
+>    print("Your name is John")
+> else if (name == "Edward"):
+>   print("Your name is Edward")
+> else:
+>   print("Your name is not Bob John or edward")
+> ```
+>
+> #### Output
+>
+> ```
+> Your name is Bob
+> ```
+>
+> The code will run top to bottom from the if to the else. If the condition isn't met it will go to the next statement.
+
+## Day 4
+
+## Loops
+
+Loops make it easier to run a piece of code continuously until a condition is fulfilled. There are 2 main types of loops: a while loop and a for loop
+
+### While Loops
+
+While loops run until a condition is fulfilled. If that condition is not fulfilled it will continue running. If you put while (True) it will run forever, while doing While(False) will make it not run
 
 ```python
-class Vehicle:
-  __init__(self, color, speed):
-    self.color = color
-    self.speed = speed
-  drive(self):
-    print("Driving at ", speed)
-
-
-class Car(Vehicle):
-  __init__(self, color, wheels, speed):
-    self.color = color
-    self.speed = speed
-    self.wheels = wheels
-
-class Boat(Vehicle):
-  __init__(self, color, speed, captain):
-    self.color = color
-    self.speed = speed
-    self.captain = captain
+password = ""
+while (password != "password123")
+  password = input("Please enter the password ")
+print("Access Granted")
 ```
 
-## Abstraction
+#### Input
 
-> Abstraction is when you hide the background process going on to do a task, and only see the end result of the task which is the only thing they need to see.
+```
+Please enter the password bob
+Please enter the password bob2
+Please enter the password password123
+```
+
+#### Output
+
+```
+Access Granted
+```
+
+### For Loops
+
+For loops run for a set number of times, not until a condition is fulfilled. For example you can make it run 3 times then exit.
 
 ```python
-class Car:
+for i in range(5):
+  print(i)
 ```
 
-## Fields and Constructor
+#### Output
 
-> The fields of the class are variables that the class needs such as wheels or length in the previous example. Constructors are a function that is called when the class is initialized. This can include setting default values or setting values from the user.
+```
+0
+1
+2
+3
+4
+```
 
-> In python a constructor **MUST** be called "\_\_init\_\_"
+In this loop i represents the current number and range(5) represents the number **up to 5, but not including 5** (0, 1, 2, 3, 4)
 
-> Heres an example of a field and constructor.
+#### Break statements
+
+Break statements manually exit the loop even if the outer condition is not fulfilled or the set number of times the loop should run is not reached
 
 ```python
-class Car:
-    __init__(self, brand, color, integrity):
-      self.brand = brand
-      self.color = color
-      self.integrity = integrity
+for i in range(5):
+  print(i)
+  if (i == 2):
+    break
 ```
 
-> Note that the first argument is self representing the object that is created
+#### Output
 
-> As said before classes can have functions that can modify that data or perform another task. As an example of a car we can repair it increasing the integrity
-
-```python
-class Car:
-    __init__(self, brand, color, integrity):
-      self.brand = brand
-      self.color = color
-      self.integrity = integrity
-    repair(self):
-        if (self.integrity > 80):
-            self.integrity = 100
-        else:
-            self.integrity += 20
 ```
-
-> This will increase the cars integrity by 20% when called
-
-## Create an object
-
-> To create an object of the class you can just initialize a variable of the class
-
-```python3
-car1 = Car("Toyota", "red", 99)
+0
+1
+2
 ```
-
-> This will create a red toyota with 99% integrity
 
 ## Next Steps
 
-Read about OOP on W3Schools if you want more information or continue to the next lesson
+Read the next lesson (1.3)
